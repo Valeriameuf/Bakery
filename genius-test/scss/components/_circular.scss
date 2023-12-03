@@ -1,0 +1,24 @@
+/* Circular */
+.form-circular {
+  position: absolute;
+  left: 690px;
+  transform: rotate(17deg);
+}
+.circular path {
+  fill: none;
+}
+.circular {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  fill: var(--color-brand-dark);
+  width: 100px;
+  height: 100px;
+  margin: 3em auto 0;
+}
+.circular svg {
+  display: block;
+  overflow: visible;
+}

@@ -1,0 +1,131 @@
+/* Modal */
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  background-color: rgb(0, 0, 0, 0.5);
+  transition: opacity 0.3s, visibility 0.3s;
+}
+.modal {
+  position: relative;
+  width: 100%;
+  max-width: 880px;
+  height: 100%;
+  max-height: 880px;
+  padding: 128px;
+  background-color: var(--color-secondary-light);
+  border-radius: 32px;
+  overflow: hidden;
+}
+.modal::after {
+  position: absolute;
+  background-image: url(../images/bread-modal.png);
+  width: 380px;
+  height: 180px;
+  bottom: 0;
+  right: -220px;
+  transform: rotate(354deg);
+  background-repeat: no-repeat;
+  content: "";
+}
+.backdrop.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.modal-btn-close {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+}
+/* .button:disabled {
+  color: var(--color-brand-dark);
+  background-color: var(--color-primary-dark);
+  border-color: currentColor;
+  cursor: not-allowed;
+} */
+/* Form-modal*/
+.contact-section__field {
+  position: relative;
+  margin-bottom: 32px;
+}
+
+.input__label {
+  position: absolute;
+  left: 42px;
+}
+.input__control {
+  padding: 16px 42px;
+  width: 100%;
+  border: 1px solid var(--color-brand-dark);
+  border-radius: 8px;
+  background-color: transparent;
+}
+.modal__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: 132%;
+  text-align: center;
+  color: var(--color-primary-dark);
+  max-width: 624px;
+  white-space: nowrap;
+  margin: 0;
+}
+.modal__paragph {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  color: #465929;
+  padding-top: 5px;
+  padding-bottom: 72px;
+  margin: 0;
+}
+.input__control:focus {
+  border-color: var(--color-primary-light);
+  outline: none;
+}
+.input__control::placeholder {
+  color: var(--color-brand-dark);
+  font-size: 16px;
+  line-height: 117%;
+}
+.input__control:focus::placeholder {
+  color: var(--color-primary-dark);
+}
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+.button {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 16px;
+}
+.modal__terms {
+  margin: 0 auto;
+  max-width: 220px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 150%;
+  text-align: center;
+}
+.modal__terms-link {
+  color: var(--color-primary-dark);
+  text-underline-offset: 2px;
+}

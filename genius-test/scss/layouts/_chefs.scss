@@ -1,0 +1,101 @@
+/* Chefs */
+.chefs__container {
+  font-family: "Poppins";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+}
+.chefs-section__list {
+  display: flex;
+  gap: 40px 30px;
+  flex-wrap: wrap;
+
+  @media screen and (max-width: $bp-tablet) {
+    gap: 20px;
+    flex-direction: row;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    flex-direction: column;
+  }
+}
+.chefs-section__item {
+  flex-basis: calc((100% - 30px) / 2);
+
+  @media screen and (max-width: $bp-tablet) {
+  }
+}
+.chef-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+
+  @media screen and (max-width: $bp-desktop) {
+    gap: 16px;
+  }
+}
+.chefs-section__title {
+  position: relative;
+  margin-bottom: 80px;
+
+  @media screen and (max-width: $bp-desktop) {
+    margin: 0 auto 24px;
+  }
+}
+.chefs-section__title::before {
+  left: 0px;
+  bottom: 24px;
+}
+.chefs-section__title::after {
+  position: absolute;
+  right: 0px;
+  bottom: 24px;
+}
+.chefs-section__title::before,
+.chefs-section__title::after {
+  content: "";
+  width: 352px;
+  position: absolute;
+  bottom: 24px;
+  border: 2px solid var(--color-brand-light);
+
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+.chef-card__title {
+  font-family: Poppins, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 36px;
+  }
+}
+.chef-card__photo {
+  width: 240px;
+  border-radius: 4px 4px 4px 200px;
+  box-shadow: -16px 16px 0 0 var(--color-secondary-light),
+    -16px 16px 0 2px var(--color-brand-dark);
+
+  @media screen and (max-width: $bp-tablet) {
+    width: 140px;
+  }
+}
+.chef-card__text p {
+  margin-bottom: 24px;
+
+  @media screen and (max-width: $bp-desktop) {
+    font-size: 14px;
+  }
+}
+.chef-card__text p:last-child {
+  margin-bottom: 0;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 18px;
+  }
+}

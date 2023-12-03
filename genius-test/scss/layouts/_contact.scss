@@ -1,0 +1,63 @@
+/* Contact */
+.contact-section {
+  padding-bottom: 96px;
+
+  @media screen and (max-width: $bp-tablet) {
+    padding-bottom: 0;
+  }
+}
+.contact-section__title {
+  line-height: 132%;
+  margin-bottom: 16px;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-size: 32px;
+    font-weight: 900;
+    line-height: 1.5;
+    text-align: center;
+  }
+}
+.fill-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-secondary-dark);
+
+  @media screen and (max-width: $bp-tablet) {
+    text-align: center;
+  }
+}
+.contact-section__form {
+  flex-shrink: 0;
+  max-width: 800px;
+}
+.contact-section__container {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+    gap: 24px;
+  }
+}
+.contact-map {
+  flex-shrink: 0;
+  width: 600px;
+  height: 595px;
+  border-radius: 16px;
+  border: none;
+
+  @media screen and (max-width: $bp-tablet) {
+    margin: auto;
+    width: 320px;
+    height: 500px;
+  }
+
+  @media screen and (max-width: $bp-mobile) {
+    height: 176px;
+    margin: 0 -24px;
+  }
+}

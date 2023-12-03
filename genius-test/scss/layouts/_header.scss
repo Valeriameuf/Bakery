@@ -1,0 +1,51 @@
+/* Header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding-top: 32px;
+
+  @media screen and (max-width: $bp-desktop) {
+    padding-top: 16px;
+  }
+
+  .header__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.header__nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 40px;
+}
+.header__menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 64px;
+  flex-grow: 1;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+
+  @media screen and (max-width: $bp-desktop) {
+    display: none;
+  }
+}
+
+[class*="__link"] {
+  text-decoration: none;
+}
+.header-menu__link {
+  color: var(--color-secondary-light);
+}
+.header-menu__link:hover {
+  color: var(--color-primary-light);
+}

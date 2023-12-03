@@ -1,0 +1,207 @@
+/* FOOTER */
+._container {
+  padding: 0;
+}
+
+.footer {
+  position: relative;
+  padding: 32px 0;
+  background-image: url(../images/backraund-img.png);
+  background-color: var(--color-primary-dark);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.footer-icon {
+  display: flex;
+  gap: 22px;
+  fill: var(--color-secondary-light);
+}
+.fb-icon:hover,
+.inst-icon:hover {
+  fill: var(--color-primary-light);
+  transform: scale(1.5);
+}
+
+.footer__container {
+  display: flex;
+  gap: 20px;
+  max-width: 1239px;
+  padding: 23px 0px 23px 0px;
+
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+.footer__nav,
+.footer-address {
+  display: flex;
+  gap: 166px;
+  flex-basis: 50%;
+
+  @media screen and (max-width: $bp-tablet) {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+.footer__logo,
+.footer-item {
+  flex-grow: 1;
+}
+.footer-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+  width: 211px;
+}
+.footer-item:not(:last-child) {
+  padding-bottom: 16px;
+}
+.footer-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-secondary-light);
+  text-decoration: none;
+}
+.footer-link:hover {
+  color: var(--color-primary-light);
+}
+
+//   display: flex;
+//   gap: 166px;
+//   flex-basis: 50%;
+
+//   @media screen and (max-width: $bp-mobile) {
+//     width: 100%;
+//     flex-direction: column;
+//     text-align: left;
+//   }
+// }
+.footer-address__list {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+  gap: 16px;
+}
+.footer-address__link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--color-secondary-light);
+  text-decoration: none;
+}
+.footer-address__link:hover {
+  color: var(--color-primary-light);
+}
+
+.footer-address__info {
+  width: 300px;
+}
+.footer-address__info-link {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  color: var(--color-secondary-light);
+  text-decoration: none;
+}
+.footer-address__info-link:hover {
+  color: var(--color-primary-light);
+}
+.footer-address__copyright {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: var(--color-brand-dark);
+}
+
+// .footer::before {
+//   position: absolute;
+//   bottom: 0;
+//   background-repeat: no-repeat;
+//   content: "";
+// }
+// .footer::before {
+//   background-image: url(../images/bread-after.png);
+//   width: 180px;
+//   height: 120px;
+//   bottom: 0;
+
+//   @media screen and (max-width: $bp-tablet) {
+//     width: 100px;
+//     height: 90px;
+//     right: 0;
+//     background-image: url("../images/decor-bread-small-mobile.png");
+//   }
+// }
+// .footer::after {
+//   position: absolute;
+//   bottom: 0;
+//   background-repeat: no-repeat;
+//   content: "";
+// }
+
+.footer::before,
+.footer::after {
+  position: absolute;
+  bottom: 0;
+  background-repeat: no-repeat;
+  content: "";
+}
+.footer::before {
+  left: 0;
+  right: auto;
+  width: 180px;
+  height: 120px;
+  background-image: url("/images/bread-after.png");
+
+  @media screen and (max-width: $bp-tablet) {
+    width: 100px;
+    height: 90px;
+    right: 0;
+    background-image: url("/images/decor-bread-small.png");
+  }
+}
+
+.footer::after {
+  right: 0;
+  top: auto;
+  left: auto;
+  width: 380px;
+  height: 190px;
+  background-image: url("/images/bread-befor.png");
+
+  @media screen and (max-width: $bp-tablet) {
+    width: 85px;
+    height: 205px;
+    top: 533px;
+    background-image: url("/images/decor-bread-small-mobile.png");
+  }
+}
+
+@media screen and (max-width: $bp-desktop) {
+  .footer-item,
+  .footer-menu,
+  .footer-address__list li,
+  .footer-address__info {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: $bp-desktop) {
+  .footer-icon {
+    align-self: center;
+  }
+}
